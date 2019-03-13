@@ -9,40 +9,45 @@
   <form id="regForm" action="/action_page.php">
     <h1>Register:</h1>
     <!-- One "tab" for each step in the form: -->
-    <div class="tab">Name:
-      <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-      <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-    </div>
-    <div class="tab">Contact Info:
-      <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-      <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-    </div>
-    <div class="tab">Birthday:
-      <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-      <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-      <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-    </div>
-    <div class="tab">Login Info:
-      <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-      <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-    </div>
-    <div style="overflow:auto;">
-      <div style="float:right;">
+    <section class="tab">Trin 1 af 3:
+      <section class="info">
+        <p>Værktøjer til pumpevalg</p>
+        <p>Produktbestilling</p>
+        <p>Installationsvideor</p>
+        <p>Detaljerede Poruktinformation</p>
+      </section>
+    </section>
+
+    <section class="tab">Trin 2 af 3:
+      <section class="split">
+        <p class="inline"><input placeholder="First name" oninput="this.className = ''" name="fname"></p>
+        <p class="inline"><input placeholder="Last name" oninput="this.className = ''" name="lname"></p>
+      </section>
+      <p><input placeholder="E-mail" ininput="this.className = ''" name="email"></p>
+      <p><input placeholder="Password" ininput="this.className = ''" name="password"></p>
+      <p><input placeholder="Country / Area" ininput="this.className = ''" name="country"></p>
+      <p><input placeholder="Company" ininput="this.className = ''" name="company"></p>
+    </section>
+    <section class="tab">Trin 3 af 3:
+      <p><input placeholder="Company Email" oninput="this.className = ''" name="cemail"></p>
+      <p><input placeholder="Area Of Interest" oninput="this.className = ''" name="aoe"></p>
+      <p><input placeholder="Jobrole" ininput="this.className = ''" name="jobrole"></p>
+    </section>
+    <section style="overflow:auto;">
+      <section style="float:right;">
         <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
         <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-      </div>
-    </div>
+      </section>
+    </section>
     <!-- Circles which indicates the steps of the form: -->
-    <div style="text-align:center;margin-top:40px;">
+    <section style="text-align:center;margin-top:40px;">
       <span class="step"></span>
       <span class="step"></span>
       <span class="step"></span>
-      <span class="step"></span>
-    </div>
+    </section>
   </form>
 
   <script src="js/main.js"></script>
 
 </body>
-
 </html>
