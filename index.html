@@ -7,31 +7,80 @@
 <body>
 
   <form id="regForm" action="/action_page.php">
-    <h1>Register:</h1>
+    <h1>Grundfos</h1>
     <!-- One "tab" for each step in the form: -->
-    <section class="tab">Trin 1 af 3:
+    <section class="tab"><img class="top-img" src="img/flueben-cirkel.svg">Trin 1 af 3:
       <section class="info">
-        <p>Værktøjer til pumpevalg</p>
-        <p>Produktbestilling</p>
-        <p>Installationsvideor</p>
-        <p>Detaljerede Poruktinformation</p>
+        <img src="img/flueben-cirkel.svg">
+        <p>Værktøjer til pumpevalg</p><br>
+        <img src="img/flueben-cirkel.svg">
+        <p>Produktbestilling</p><br><img src="img/flueben-cirkel.svg">
+        <p>Installationsvideor</p><br><img src="img/flueben-cirkel.svg">
+        <p>Detaljerede Produktinformation</p>
       </section>
     </section>
 
-    <section class="tab">Trin 2 af 3:
+
+    <section class="tab">
+      <p class="trin">Trin 2 af 3:</p>
+      <p class="header-text">Opret end Grundfos Konto</p>
       <section class="split">
         <p class="inline"><input placeholder="First name" oninput="this.className = ''" name="fname"></p>
         <p class="inline"><input placeholder="Last name" oninput="this.className = ''" name="lname"></p>
       </section>
       <p><input placeholder="E-mail" ininput="this.className = ''" name="email"></p>
-      <p><input placeholder="Password" ininput="this.className = ''" name="password"></p>
-      <p><input placeholder="Country / Area" ininput="this.className = ''" name="country"></p>
+      <p><input type="password" placeholder="Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"ininput="this.className = ''"></p>
+
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+
+      <select>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+      </select>
       <p><input placeholder="Company" ininput="this.className = ''" name="company"></p>
     </section>
-    <section class="tab">Trin 3 af 3:
+    <section class="tab">
+      <p class="trin">Trin 3 af 3:</p>
+      <p class="header-text">Optimér din brugeroplevelse</p>
+      <p class="header-text-small">Denne sektion er optionel. For at vi kan levere den bedst mulige service, beder vi dig venligt om at udfylde flest mulige punkter</p>
       <p><input placeholder="Company Email" oninput="this.className = ''" name="cemail"></p>
       <p><input placeholder="Area Of Interest" oninput="this.className = ''" name="aoe"></p>
       <p><input placeholder="Jobrole" ininput="this.className = ''" name="jobrole"></p>
+      <label class="container">
+        <p>Nyhedsbrev</p>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <p>ToS</p>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
     </section>
     <section style="overflow:auto;">
       <section style="float:right;">
@@ -50,4 +99,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
