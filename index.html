@@ -31,15 +31,16 @@
       <p><input placeholder="E-mail" ininput="this.className = ''" name="email"></p>
       <p><input type="password" placeholder="Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"ininput="this.className = ''"></p>
 
-      <div id="message">
-        <h3>Password must contain the following:</h3>
-        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
 
-        <p id="number" class="invalid">A <b>number</b></p>
-        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-      </div>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
 
       <select>
+        <option value="Land">Land</option>
         <option value="Afghanistan">Afghanistan</option>
         <option value="Belgium">Belgium</option>
         <option value="China">China</option>
@@ -68,8 +69,29 @@
       <p class="header-text">Optimér din brugeroplevelse</p>
       <p class="header-text-small">Denne sektion er optionel. For at vi kan levere den bedst mulige service, beder vi dig venligt om at udfylde flest mulige punkter</p>
       <p><input placeholder="Company Email" oninput="this.className = ''" name="cemail"></p>
-      <p><input placeholder="Area Of Interest" oninput="this.className = ''" name="aoe"></p>
-      <p><input placeholder="Jobrole" ininput="this.className = ''" name="jobrole"></p>
+      <select>
+        <option value="Interesseområder">Interesseområder</option>
+        <option value="Private hjem">Private Hjem</option>
+        <option value="Erhvervsejendomme">Erhvervsejendomme</option>
+        <option value="Industri-processer">Industri-processer</option>
+        <option value="Generel industri">Generel industri</option>
+        <option value="Vandforsyning">Vandforsyning</option>
+        <option value="Spildevand">Spildevand</option>
+      </select>
+      <select>
+        <option value="Jobrolle">Jobrolle</option>
+        <option value="Installatør">Installatør</option>
+        <option value="Ejendomsinspektør">Ejendomsinspektør</option>
+        <option value="Rådgivende ingeniør">Rådgivende ingeniør</option>
+        <option value="Grossist/forhandler">Grossist/forhandler</option>
+        <option value="Servicemontør">Servicemontør</option>
+        <option value="Driftschef">Driftschef</option>
+        <option value="OEM">OEM</option>
+        <option value="Husejer">Husejer</option>
+        <option value="Entreprenør">Entreprenør</option>
+        <option value="Teknisk direktør">Teknisk direktør</option>
+        <option value="Andre">Andre</option>
+      </select>
       <label class="container">
         <p>Nyhedsbrev</p>
         <input type="checkbox">
