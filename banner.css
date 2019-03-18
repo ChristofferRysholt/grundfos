@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+}
+
+.header-banner {
+  width: 100%;
+  padding-top: 4.2%;
+  background-color: rgb(17,73,124);
+  
+}
+.header-banner img {
+  width: 15%;
+  padding-bottom: 0.5%;
+  margin-left: 11.2%;
+}
+
+.bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  font-family: raleway, sans-serif;
+  color: white;
+  position: absolute;
+  float: left;
+  top: 20%;
+  left: 5%;
+  width: 25%;
+}
+
+.icon-grid { 
+  float: left;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-30%, -30%);
+}
