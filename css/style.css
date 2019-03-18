@@ -30,7 +30,18 @@ body {
 h1 {
   text-align: center;
 }
-
+.ToS {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 0.8rem;
+}
+.ToS a {
+  color: rgb(17,73,124);
+  text-decoration: none;
+}
+.ToS a:hover {
+  text-decoration: underline;
+}
 input {
   display: flex;
   padding: 10px;
@@ -38,6 +49,7 @@ input {
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
+  background-color: rgb(242,242,242);
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -127,6 +139,7 @@ select {
   font-size: 17px;
   width: 100%;
   padding: 14px;
+  background-color: rgb(242,242,242);
   color: rgb(117,117,117);
   margin-top: 6px;
   margin-bottom: 16px;
@@ -229,6 +242,7 @@ input[type=submit] {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  margin-top: 4%;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -236,7 +250,19 @@ input[type=submit] {
   -ms-user-select: none;
   user-select: none;
 }
-
+.container p {
+  font-size: 1rem;
+}
+.container p strong {
+  color: rgb(17,73,124);
+}
+.container a{
+  color: rgb(17,73,124);
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: underline;
+}
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
