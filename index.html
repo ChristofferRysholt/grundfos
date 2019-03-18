@@ -16,8 +16,6 @@
   </section>
 
   <form id="regForm" action="/action_page.php">
-    <h1></h1>
-    <!-- One "tab" for each step in the form: -->
     <section class="tab"><img class="top-img" src="img/flueben-cirkel.svg" alt="Billede af flueben">
       <p class="centered-text">Trin 1 af 3:</p>
       <p class="centered-text" style="text-decoration:underline">Fordele ved en Grundfos Konto:</p>
@@ -41,8 +39,8 @@
         <p class="inline"><input placeholder="Fornavn" oninput="this.className = ''" name="fname"></p>
         <p class="inline"><input placeholder="Efternavn" oninput="this.className = ''" name="lname"></p>
       </section>
-      <p><input placeholder="E-mail" ininput="this.className = ''" name="email"></p>
-      <p><input type="password" placeholder="Adgangskode" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"ininput="this.className = ''"></p>
+      <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p>
+      <p><input type="password" placeholder="Adgangskode" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="this.className = ''"></p>
 
     <div id="message">
       <h3>Adgangsord skal indeholde de følgende:</h3>
@@ -65,7 +63,7 @@
         <option value="Denmark">Lithauen</option>
         <option value="Egypt">Peru</option>
       </select>
-      <p><input placeholder="Virksomhed" ininput="this.className = ''" name="company"></p>
+      <p><input placeholder="Virksomhed" oninput="this.className = ''" name="company"></p>
     </section>
     <section class="tab">
       <p class="trin">Trin 3 af 3:</p>
