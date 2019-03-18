@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="da-DK">
+<meta charset="utf-8">
+<title>Grundfos | Opret konto</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Opret, Grundfos, Konto">
+<meta name="description" content="Opret end Grundfos Konto og få yderligere fordele.">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/grundfos-favicon.ico">
 <link rel="stylesheet" href="css/style.css" />
 
 <body>
 
+  <section class="header-banner">
+      <img src="img/grundfos-logo.svg" />
+  </section>
+
   <form id="regForm" action="/action_page.php">
-    <h1>Grundfos</h1>
+    <h1></h1>
     <!-- One "tab" for each step in the form: -->
-    <section class="tab"><img class="top-img" src="img/flueben-cirkel.svg">Trin 1 af 3:
+    <section class="tab"><img class="top-img" src="img/flueben-cirkel.svg">
+      <p class="centered-text">Trin 1 af 3:</p>
+      <p class="centered-text" style="text-decoration:underline">Fordele ved en Grundfos Konto:</p>
       <section class="info">
-        <img src="img/flueben-cirkel.svg">
-        <p>Værktøjer til pumpevalg</p><br>
-        <img src="img/flueben-cirkel.svg">
-        <p>Produktbestilling</p><br><img src="img/flueben-cirkel.svg">
-        <p>Installationsvideor</p><br><img src="img/flueben-cirkel.svg">
-        <p>Detaljerede Produktinformation</p>
+        <img src="img/flueben.svg">
+          <p>VÆRKTØJER TIL PUMPEVALG</p><br>
+        <img src="img/flueben.svg">
+          <p>PRODUKTBESTILLING</p><br>
+        <img src="img/flueben.svg">
+          <p>INSTALLATIONSVIDEOR</p><br>
+        <img src="img/flueben.svg">
+          <p>DETALJERET PRODUKTINFORMATION</p>
       </section>
     </section>
 
@@ -25,18 +38,18 @@
       <p class="trin">Trin 2 af 3:</p>
       <p class="header-text">Opret end Grundfos Konto</p>
       <section class="split">
-        <p class="inline"><input placeholder="First name" oninput="this.className = ''" name="fname"></p>
-        <p class="inline"><input placeholder="Last name" oninput="this.className = ''" name="lname"></p>
+        <p class="inline"><input placeholder="Fornavn" oninput="this.className = ''" name="fname"></p>
+        <p class="inline"><input placeholder="Efternavn" oninput="this.className = ''" name="lname"></p>
       </section>
       <p><input placeholder="E-mail" ininput="this.className = ''" name="email"></p>
-      <p><input type="password" placeholder="Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"ininput="this.className = ''"></p>
+      <p><input type="password" placeholder="Adgangskode" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"ininput="this.className = ''"></p>
 
     <div id="message">
-      <h3>Password must contain the following:</h3>
-      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <h3>Adgangsord skal indeholde de følgende:</h3>
+      <p id="letter" class="invalid">Et <b>lille</b> bogstav</p>
 
-      <p id="number" class="invalid">A <b>number</b></p>
-      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      <p id="number" class="invalid">Et <b>nummer</b></p>
+      <p id="length" class="invalid">Mindst <b>8 tegn</b></p>
     </div>
 
       <select>
@@ -52,13 +65,12 @@
         <option value="Denmark">Lithauen</option>
         <option value="Egypt">Peru</option>
       </select>
-      <p><input placeholder="Company" ininput="this.className = ''" name="company"></p>
+      <p><input placeholder="Virksomhed" ininput="this.className = ''" name="company"></p>
     </section>
     <section class="tab">
       <p class="trin">Trin 3 af 3:</p>
       <p class="header-text">Optimér din brugeroplevelse</p>
       <p class="header-text-small">Denne sektion er optionel. For at vi kan levere den bedst mulige service, beder vi dig venligt om at udfylde flest mulige punkter</p>
-      <p><input placeholder="Company Email" oninput="this.className = ''" name="cemail"></p>
       <select>
         <option value="Interesseområder">Interesseområder</option>
         <option value="Private hjem">Private Hjem</option>
@@ -67,6 +79,7 @@
         <option value="Generel industri">Generel industri</option>
         <option value="Vandforsyning">Vandforsyning</option>
         <option value="Spildevand">Spildevand</option>
+        <option value="Andet">Andet</option>
       </select>
       <select>
         <option value="Jobrolle">Jobrolle</option>
@@ -96,8 +109,8 @@
     </section>
     <section style="overflow:auto;">
       <section style="float:right;">
-        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Tilbage</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Næste</button>
       </section>
     </section>
     <!-- Circles which indicates the steps of the form: -->
