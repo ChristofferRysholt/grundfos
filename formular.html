@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<meta charset="utf-8">
+<title>Grundfos | Opret konto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Opret, Grundfos, Konto">
+<meta name="description" content="Opret end Grundfos Konto og få yderligere fordele.">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/grundfos-favicon.ico">
+<link rel="stylesheet" href="css/style.css" />
+
+<body>
+<main>
+  <section class="header-banner">
+      <img src="img/grundfos-logo.svg" alt="Grundfos Logo">
+  </section>
+
+  <form id="regForm" action="/action_page.php">
+    <section class="tab"><img class="top-img" src="img/flueben-cirkel.svg" alt="Billede af flueben">
+      <p class="centered-text">Trin 1 af 3:</p>
+      <p class="centered-text" style="text-decoration:underline">Fordele ved en Grundfos Konto:</p>
+      <section class="info">
+        <img src="img/flueben.svg" alt="Billede af flueben">
+          <p>VÆRKTØJER TIL PUMPEVALG</p><br>
+        <img src="img/flueben.svg" alt="Billede af flueben">
+          <p>PRODUKTBESTILLING</p><br>
+        <img src="img/flueben.svg" alt="Billede af flueben">
+          <p>INSTALLATIONSVIDEOR</p><br>
+        <img src="img/flueben.svg" alt="Billede af flueben">
+          <p>DETALJERET PRODUKTINFORMATION</p>
+      </section>
+    </section>
+
+
+    <section class="tab">
+      <p class="trin">Trin 2 af 3:</p>
+      <p class="header-text">Opret end Grundfos Konto</p>
+      <section class="split">
+        <p class="inline"><input placeholder="Fornavn" oninput="this.className = ''" name="fname"></p>
+        <p class="inline"><input placeholder="Efternavn" oninput="this.className = ''" name="lname"></p>
+      </section>
+      <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p>
+      <p><input type="password" placeholder="Adgangskode" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="this.className = ''"></p>
+
+    <div id="message">
+      <h3>Adgangsord skal indeholde de følgende:</h3>
+      <p id="letter" class="invalid">Et <b>lille</b> bogstav</p>
+
+      <p id="number" class="invalid">Et <b>nummer</b></p>
+      <p id="length" class="invalid">Mindst <b>8 tegn</b></p>
+    </div>
+
+      <select>
+        <option value="Land">Land</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgien</option>
+        <option value="China">Canada</option>
+        <option value="Denmark">Danmark</option>
+        <option value="Egypt">Egypten</option>
+        <option value="Afghanistan">Frankrig</option>
+        <option value="Belgium">Holland</option>
+        <option value="China">Japan</option>
+        <option value="Denmark">Lithauen</option>
+        <option value="Egypt">Peru</option>
+      </select>
+      <p><input placeholder="Virksomhed" oninput="this.className = ''" name="company"></p>
+    </section>
+    <section class="tab">
+      <p class="trin">Trin 3 af 3:</p>
+      <p class="header-text">Personaliser din brugeroplevelse</p>
+      <p class="header-text-small">Denne sektion er optionel. For at vi kan levere den bedst mulige service, beder vi dig venligt om at udfylde flest mulige punkter</p>
+      <select>
+        <option value="Interesseområder">Interesseområder</option>
+        <option value="Private hjem">Private Hjem</option>
+        <option value="Erhvervsejendomme">Erhvervsejendomme</option>
+        <option value="Industri-processer">Industri-processer</option>
+        <option value="Generel industri">Generel industri</option>
+        <option value="Vandforsyning">Vandforsyning</option>
+        <option value="Spildevand">Spildevand</option>
+        <option value="Andet">Andet</option>
+      </select>
+      <select>
+        <option value="Jobrolle">Jobrolle</option>
+        <option value="Installatør">Installatør</option>
+        <option value="Ejendomsinspektør">Ejendomsinspektør</option>
+        <option value="Rådgivende ingeniør">Rådgivende ingeniør</option>
+        <option value="Grossist/forhandler">Grossist/forhandler</option>
+        <option value="Servicemontør">Servicemontør</option>
+        <option value="Driftschef">Driftschef</option>
+        <option value="OEM">OEM</option>
+        <option value="Husejer">Husejer</option>
+        <option value="Entreprenør">Entreprenør</option>
+        <option value="Teknisk direktør">Teknisk direktør</option>
+        <option value="Andre">Andre</option>
+      </select>
+      <label class="container">
+        <p><strong>Nyhedsbrev</strong> - Tilmeld dig vores nyhedsbrev og vær en af de første til at modtage nyheder om nye produkter, ændringer med mere. <a href="#">Læs mere her</a></p>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+
+      <p class="ToS">
+        Hvis du klikker på Opret Konto, accepterer du vores <a href="#">vilkår</a>. Læs mere om, hvordan vi indsamler, bruger og deler dine oplysninger, i vores <a href="#">datapolitik</a> og om, hvordan vi bruger cookies og lignende teknologi, i vores <a href="#">politik om cookies</a>. Du vil muligvis modtage e-mails fra os og kan framelde dem når som helst.
+      </p>
+
+    </section>
+    <section style="overflow:auto;">
+      <section style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Tilbage</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Næste</button>
+      </section>
+    </section>
+    <!-- Circles which indicates the steps of the form: -->
+    <section style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </section>
+  </form>
+</main>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
