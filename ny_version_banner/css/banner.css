@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    font-family: raleway, sans-serif;
+}
+.banner {
+  position: relative;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.header-banner {
+  width: 100%;
+  padding-top: 4.2%;
+  background-color: rgb(17,73,124);
+
+}
+.header-banner img {
+  width: 15%;
+  padding-bottom: 0.5%;
+  margin-left: 11.2%;
+}
+
+.bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  color: white;
+  position: absolute;
+  width: 40%;
+  top: 5%;
+  left: 2%;
+}
+.banner-text h2 {
+  font-size: 5rem;
+}
+.banner-text p {
+  font-size: 2.5rem;
+}
+.icon-grid {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.icon-grid li {
+  width: 25%;
+  margin-left: 5%;
+  list-style-type: none;
+}
+.icon-grid p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.icon-grid img {
+  width: 100%;
+}
+.icon-grid img:hover {
+  transform: scale(1.1);
+}
