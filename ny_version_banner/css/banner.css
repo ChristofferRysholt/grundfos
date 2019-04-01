@@ -43,10 +43,10 @@ body, html {
   left: 2%;
 }
 .banner-text h2 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .banner-text p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .icon-grid {
   width: 55%;
@@ -57,12 +57,12 @@ body, html {
   right: 5%;
 }
 .icon-grid li {
-  width: 25%;
+  width: 20%;
   margin-left: 5%;
   list-style-type: none;
 }
 .icon-grid p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
   text-align: center;
 }
